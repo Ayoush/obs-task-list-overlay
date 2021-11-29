@@ -8,6 +8,14 @@ function load_config() {
     // Set the title width.
     $(".title-wrapper .left").width(data.task_list_title_width);
 
+    $(".title-wrapper .weight span").text(data.weight);
+    // Set the title width.
+    $(".title-wrapper .weight").width(data.weight_width);
+
+    $(".title-wrapper .streak span").text(data.streak);
+    // Set the title width.
+    $(".title-wrapper .streak").width(data.streak_width);
+
     // Set up the item list.
     var $this = $("ul.task-list").empty();
     items = data.task_list_items;
